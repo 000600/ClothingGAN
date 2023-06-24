@@ -105,7 +105,7 @@ opt = Adam(learning_rate = 0.0002, beta_1 = 0.5) # Initialize optimizer with sta
 discriminator.compile(loss = 'binary_crossentropy', optimizer = opt, metrics = ['binary_accuracy']) # Compile discriminator
 
 # Load the generator model
-generator = load_model('ClothingGANepoch200.h5')
+generator = load_model('clothingGANepoch200.h5')
 
 # Create the complete GAN
 discriminator.trainable = False # Make discriminator weights stationary
