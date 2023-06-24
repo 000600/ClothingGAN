@@ -49,10 +49,11 @@ def view_images(images, dim = 10):
 	
 	plt.show()
 
+# Set the number of latent dimensions
 latent_dim = 100
 
 # Create the generator model
-model = load_model('ClothingGANepoch200.h5')
+model = load_model('clothingGANepoch200.h5')
 
 # View generated images
 num_images = 25
@@ -60,7 +61,7 @@ inputs = generate_latent_points(latent_dim, num_images) # Generate inputs for 25
 generated_images = model.predict(inputs)
 view_images(generated_images, 5) # Display 25 images
 
-input_vector = asarray([[1.0 for _ in range(100)]]) # Generate input of just zeros
+input_vector = asarray([[0.0 for _ in range(100)]]) # Generate input of just zeros
 generated_image = model.predict(input_vector) # Output one image
 plt.imshow(generated_image[0, :, :, 0], cmap = 'gray_r')
 plt.show() # Display a single image
