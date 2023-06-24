@@ -36,7 +36,7 @@ There are four files included in this repository, each of which with separate fu
 - **clothingGANepoch200.h5** is an example .h5 file that stores weights. When loaded into the **display_images.py** file, one can see the GAN's ability to generate images of handwritten digits after 200 epochs.
 
 ## The Dataset
-The dataset is an MNIST dataset included within the Keras library. The dataset contains approximately 70,000 (60,000 images in the train set and 10,000 images in the test set) 28 x 28 pixel images of human handwriting of numbers 0 - 9 and is included within the **DigitGAN.py** and **load_GAN.py** files.
+The dataset is an MNIST included within keras and contains approximately 70,000 28 x 28 pixel images of human clothing and is included within all of the files except the **clothingGANepoch200.py** file.
 
 ## Libraries
 This GAN was created with the help of the Tensorflow library.
